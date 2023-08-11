@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container-calculator">
+    <div class="container-input">
+      <div class="input-day">
+        <span>Day</span>
+        <input type="text" name="day" id="input-day" maxlength="2">
+      </div>
+      <div class="input-mouth">
+        <span>Month</span>
+        <input type="text" name="mouth" id="input-month" maxlength="2">
+      </div>
+      <div class="input-years">
+        <span>Years</span>
+        <input type="text" name="years" id="input-years" maxlength="4">
+      </div>
+    </div>
+    <div class="container-line"></div>
+    <div class="container-submit-value">
+      <button type="button" id="submit">
+        <i class="fa-solid fa-arrow-down"></i>
+      </button>
+    </div>
+    <div class="container-output">
+      <div class="ouput-text">
+        <span id="years-output"></span>
+        <span class="text">years</span>
+      </div>
+      <div class="output-text">
+        <span id="months-output"></span>
+        <span class="text">months</span>
+      </div>
+      <div class="output-text">
+        <span id="days-output"></span>
+        <span class="text">days</span>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="https://kit.fontawesome.com/19af625672.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

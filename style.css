@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eee;
+    font-family: "Poppins";
+}
+
+.container-calculator {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 10px;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+}
+
+.container-input div input {
+    width: 80px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 0.8px solid #ddd;
+    outline: none;
+    text-decoration: none;
+    padding-left: 10px;
+    font-family: "Poppins";
+    font-size: 1.2em;
+    text-align: start;
+    font-weight: 600;
+}
+
+.input-day,
+.input-mouth,
+.input-years {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.container-input div span {
+    font-weight: 400;
+    color: #999;
+}
+
+.container-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 16px;
+}
+
+.container-submit-value {
+    position: absolute;
+    top: 6em;
+    right: 3em;
+}
+
+.container-submit-value button {
+    padding: 14px 15px;
+    background-color: #000; 
+    color: #fff;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+
+.container-output {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-output div span {
+    font-size: 2em; 
+    font-weight: 700;
+    font-style: italic;
+    color: #111;
+}
+
+.container-output div #years-output,
+.container-output div #months-output,
+.container-output div #days-output {
+    color: #844cff;
+}
